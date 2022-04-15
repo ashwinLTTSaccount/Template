@@ -12,7 +12,7 @@ public class TemplateController {
     @PostMapping("/template")
     public ResponseEntity<?> template(@RequestBody TaskData taskData){
         try {
-            Thread.sleep(15000);
+            Thread.sleep(1000);
             return new ResponseEntity<>(taskData, HttpStatus.OK);
         }catch (Exception e){
             e.printStackTrace();
